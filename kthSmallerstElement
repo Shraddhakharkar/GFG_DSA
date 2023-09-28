@@ -1,0 +1,18 @@
+package GFGArray;
+
+import java.util.Arrays;
+
+public class KthElementInLargestArray {
+    public static int kthSmallerstElement(Integer[] arr, int k)
+    {
+        Arrays.sort(arr);
+        return arr[k-1];
+    }
+
+    public static void main(String[] args) {
+        Integer arr[] = new Integer[]{12, 3, 7, 5, 19};
+        int k = 2;
+        System.out.print("K'th smallest element is " + kthSmallerstElement(arr, k));
+    }
+
+}
